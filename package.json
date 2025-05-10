@@ -1,7 +1,7 @@
 {
-  "name": "desiandmario.com",
+  "name": "stefiandivancho.com",
   "version": "0.0.1",
-  "description": "Codebase for https://desiandmario.com",
+  "description": "Codebase for https://stefiandivancho.com",
   "main": "_site/index.html",
   "scripts": {
     "test": "htmlproofer ./_site --only-4xx && bundle exec jekyll build && scss-lint ./_sass/**/*.scss && eslint _js-es6",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/tumbleshack/tumbleshack/wedding"
   },
-  "homepage": "https://desiandmario.com",
+  "homepage": "https://stefiandivancho.com",
   "dependencies": {
     "@actions/cache": "^3.0.4",
     "@babel/cli": "^7.18.10",
@@ -40,8 +40,7 @@
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "node-sass": "^7.0.3",
-    "sass": "^1.54.9",
+    "sass": "^1.87.0",
     "snyk": "^1.1008.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"

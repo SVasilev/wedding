@@ -1,6 +1,6 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
-var sass        = require('gulp-sass')(require('node-sass'));
+var sass        = require('gulp-sass')(require('sass'));
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var sourcemaps = require('gulp-sourcemaps');
@@ -19,7 +19,7 @@ var messages = {
  */
  gulp.task('jekyll-develop', function (done) {
      browserSync.notify(messages.jekyllBuild);
-     return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+     return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit', shell: true})
          .on('close', done);
  });
 
@@ -60,27 +60,28 @@ gulp.task('sass-develop', function () {
   });
 
 gulp.task('jekyll-build', function (done) {
-    return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit'})
+    return cp.spawn('bundle', ['exec', 'jekyll', 'build'], {stdio: 'inherit', shell: true})
         .on('close', done);
 });
 
 /**
  * Rebuild Jekyll & do page reload
  */
-gulp.task('jekyll-rebuild', gulp.series('jekyll-develop'), function () {
+gulp.task('jekyll-rebuild', gulp.series('jekyll-develop', function (done) {
     browserSync.reload();
-});
+    done();
+}));
 
 /**
  * Wait for jekyll-build, then launch the Server
  */
-gulp.task('browser-sync', gulp.series('sass-develop', 'js-develop', 'jekyll-develop'), function() {
+gulp.task('browser-sync', gulp.series('sass-develop', 'js-develop', 'jekyll-develop', function(done) {
     browserSync({
         server: {
             baseDir: '_site'
         }
-    });
-});
+    }, done);
+}));
 
 gulp.task('sass-build', function () {
     return gulp.src('_sass/main.scss')
