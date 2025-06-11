@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>We&apos;re getting married on 29th September 2016!
+</description>
+    <link>http://desiandmario.com/</link>
+    <atom:link href="http://desiandmario.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 06 May 2025 13:29:41 +0300</pubDate>
+    <lastBuildDate>Tue, 06 May 2025 13:29:41 +0300</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+  </channel>
+</rss>
