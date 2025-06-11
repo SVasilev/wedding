@@ -63,12 +63,12 @@
     top: 0;
     left: 37px;
     height: 100%;
-    width: 4px;
+    width: 6px;
     background: $dark-color;
 
     @include mq($bp-small) {
       left: 50%;
-      margin-left: -2px;
+      margin-left: -3px;
     }
   }
 }
@@ -80,10 +80,11 @@
   opacity: 0;
 
   @include mq($bp-small) {
-    margin: 20rem 0;
+    margin: 10rem 0;
 
     &:first-child {
       margin-top: 0;
+      margin-bottom: -5rem;
     }
 
     &:last-child {
@@ -96,7 +97,7 @@
   }
 
   &:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0rem;
   }
 }
 
@@ -148,6 +149,7 @@
   margin-left: 60px;
   padding: 1em 0;
   text-align: center;
+  //color: #52191f;
 
   @include mq($bp-small) {
     margin-left: 0;
@@ -161,19 +163,19 @@
     }
 
     &:nth-child(2) {
-      padding: 0 2rem 0 0;
+      padding: 10px 4rem 0 0;
     }
 
     .cd-date {
       position: absolute;
       width: 100%;
       left: 130%;
-      top: .4rem;
+      top: 4rem;
     }
 
     .cd-timeline-block:nth-child(even) & {
       float: right;
-      padding: 0 0 0 3rem;
+      padding: 10px 0 0 5rem;
 
 
       &::before {

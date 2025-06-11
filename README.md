@@ -2,7 +2,7 @@
 
 ## Toolchain
 
-1. Install Python, NodeJS and Ruby
+1. Install Python (3.13.3), NodeJS (22.15.0) and Ruby (3.4.3)
 2. Install gulp
     ```
     $ npm install -g gulp@4.0.2

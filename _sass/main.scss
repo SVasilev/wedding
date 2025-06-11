@@ -1,23 +1,29 @@
 @charset 'utf-8';
 
 // Variables
-$base-font-family: 'Raleway', sans-serif;
+$base-font-family: 'vdl-kyosensya', sans-serif;
 $base-font-size:   16px;
-$base-font-weight: 500;
+$base-font-weight: 400;
 
-$secondary-font-family: 'Verdana', serif;
+$secondary-font-family: 'vdl-kyosensya', serif;
+$secondary-font-size:   16px;
+$secondary-font-weight: 400;
 
 $small-font-size:  $base-font-size * 0.75;
 $base-line-height: 1.5;
 
 $spacing-unit:     1.5rem;
 
-$dark-color:      #4E5A65;
-$light-color:     #f8f8ff; // ivory
+//$dark-color:      #4E5A65;
+//$light-color:     #f8f8ff; // ivory
 $grey-color:       #748A9E;
 
+$dark-color:      #52191f;
+$light-color:     #f8f8ff; // ivory
+//$grey-color:       #d13f4d;
+
 $background-color: $light-color;
-$highlight-color: #7CA0B6;
+$highlight-color: #7E7167;
 
 // Width of the content area
 $content-width:    800px;

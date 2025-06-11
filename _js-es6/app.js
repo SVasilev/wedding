@@ -11,6 +11,10 @@ PrimaryNav();
 import TimelineLoading from './modules/timeline-loading';
 TimelineLoading();
 
+import ImportCustomFont from "./modules/import-custom-font";
+ImportCustomFont();
+
+
 // Photoswipe
   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
