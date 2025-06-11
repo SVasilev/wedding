@@ -8,18 +8,52 @@ sitemap:
     changefreq: 'monthly'
     lastmod: 2022-11-24T12:49:30+00:00
 ---
+<!--
+Генерални
+    - [x] Шрифта трябва да стане този от поканите навсякъде
+    - [x] Текста навсякъде да е в червения цвят
+    - [x] Може би бекграунда трябва да е Патерн или Маска/Текстура дето добавя грейн.
+    - [x] Да се оправи как стои на телефон (май само началната страница е зле)
+    - [x] Финализиране на избраните снимки
+    - [x] Да се финализира текста в сайта
+    - [x] Да се финализира анкетата
+    - [x] В допълнение да се добавят звездички
+    - [x] Да се закупи домейн и да се сетъпне GitHub Pages с HTTPS
+Начална Страница
+    - [x] Цветовете на Ивана и Стефан (може би малко по-светли) - направил съм opacity 0.6 - окей ли е?
+    - [x] Правоъгълника "Ще се Женим!" - прекалено модерен - трябва някак да го фитнем
+Страница Програма
+    - [x] Разстоянието в програмата да е по-малко
+        - [x] Удебелих и линията, защото всичко в момента е по-дебело и голямо
+    - [x] Центриране на часовете
+    - [x] Оправяне на разместване на "Какво трябва да знаете за деня" и "Къде е мястото" - виж в _layout.css - остана да се оправи само "Къде е мястото"
+    - [x] Кръгчетата да са в червения цвят
+    - [x] Пак трябва да се центрират неща след като намалихме шрифта
+    - [x] Да се сменят самите иконки в гръгчетата
+
+За дискутиране
+    - [x] Програма е центрирано, но останалите 3 секции ("Информация за деня", "Мястото", "Регистрация") стоят по-добре като не са центрирани
+
+Опционално
+    - [ ] Да се мине на всички места, където съм мазал style тагове и да се направи грамотно
+-->
+
+    <div class="hero-flex-wrap" style="position: relative; float: right; width: 45%; height:35vh; margin-right: 0.5vw">
+        <img src="images/us/stefan-ivancho.png" alt="IMAGE" style="opacity: 0.6">
+    </div>
 
     <!-- hero intro -->
     <div class="hero-flex-wrap">
         <div>
-            <div class="wrapper">
-                <div class="hero animated fadeInUp">
-                    <span class="hero__txt hero__txt--lrg">Ще се женим!</span>
-                    <span class="hero__txt hero__txt--sm">18 Октомври, 2025 | Пасарел Лейк Клуб, Долни Пасарел</span>
+            <div class="wrapper" style="float: right; width: 45%;">
+                <div class="hero animated fadeInUp" style="background-color: rgba(237,225,196,0.7); background-image: url('images/noise/black-paper.png'); background-repeat: repeat; background-size: auto;">
+                    <span class="hero__txt hero__txt--lrg" style="font-size: 2.2rem">Ще се женим!</span>
+                    <span class="hero__txt hero__txt--sm" style="font-size: 1.2rem; letter-spacing: 0.13rem;">18 Октомври, 2025</span>
+                    <span class="hero__txt hero__txt--sm" style="font-size: 1.2rem; letter-spacing: 0.13rem;">Пасарел Лейк Клуб, Долни Пасарел</span>
                     <!-- <span class="hero__txt hero__txt--sm">The Netherlands</span> -->
                 </div>
-                <span class="link-leader">
-                    <a href="#schedule">Какъв е планът?</a> &#8595;
+                <span class="link-leader" style="padding: 20px; bottom: auto; color: #ede1c4;">
+                    <a href="#schedule" style="font-size: 1.2rem; color: #ede1c4;">Още малко детайли за деня</a> &#8595;
                 </span>
             </div>
         </div>
@@ -29,19 +63,19 @@ sitemap:
 
 <!-- schedule -->
 <div class="wrapper" id="schedule">
-    <h2 class="section__header">Програма</h2>
+    <h2 class="section__header" style="text-align: center">Програма</h2>
     <div class="cd-container">
         <section class="cd-timeline">
             <div class="cd-timeline-block animated">
                 <div class="cd-timeline-img">
-                    <img src="images/wedicons/drinks.svg" alt="Drinks icon">
+                    <img src="images/wedicons/wine-glass.png" alt="Drinks icon" style="filter: saturate(100%) contrast(1) opacity(100%);">
                 </div>
                 <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
-                    <h3>Добре дошли</h3>
-                    <h4 class="cd-date for-small">17:45</h4>
-                    <p>Нашите родители ще Ви посрещнат с питие, хапки и добро настроение.</p>
+                    <h5>КОКТЕЙЛИ ЗА ДОБРЕ ДОШЛИ</h5>
+                    <h4 class="cd-date for-small">15:15</h4>
+                    <p style="font-size: 14px;">Носете си топличка дреха, надяваме се времето да позволи за коктейли и ритуал на открито.</p>
                 </div>
                 <!-- cd-timeline-content -->
             </div>
@@ -50,42 +84,42 @@ sitemap:
 
             <div class="cd-timeline-block animated">
                 <div class="cd-timeline-img">
-                    <img src="images/wedicons/ceremony.svg" alt="Ceremony icon">
+                    <img src="images/wedicons/wedding-rings.png" alt="Ceremony icon">
                 </div>
                 <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
-                    <h3>Изнесен ритуал</h3>
-                    <h4 class="cd-date for-small">18:30</h4>
-                    <p>Ще си кажем "Да".</p>
+                    <h5>ИЗНЕСЕН РИТУАЛ</h5>
+                    <h4 class="cd-date for-small">16:00</h4>
+                    <p style="font-size: 14px;">Ще си кажем "Да".</p>
                 </div>
                 <!-- cd-timeline-content -->
             </div>
 
             <div class="cd-timeline-block animated">
                 <div class="cd-timeline-img">
-                    <img src="images/wedicons/camera.svg" alt="Camera icon">
+                    <img src="images/wedicons/photo-camera.png" alt="Camera icon">
                 </div>
                 <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
-                    <h3> Снимки </h3>
-                    <h4 class="cd-date for-small"> 19:00 </h4>
-                    <p>Снимки с нас и семействата ни.</p>
+                    <h5> СНИМКИ </h5>
+                    <h4 class="cd-date for-small">16:30 </h4>
+                    <p style="font-size: 14px;">Снимки с гостите и приемане на подаръци.</p>
                 </div>
                 <!-- cd-timeline-content -->
             </div>
 
             <div class="cd-timeline-block animated">
                 <div class="cd-timeline-img">
-                    <img src="images/wedicons/dinner.svg" alt="Ceremony icon">
+                    <img src="images/wedicons/dish.png" alt="Ceremony icon">
                 </div>
                 <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
-                    <h3>Вечеря</h3>
-                    <h4 class="cd-date for-small">19:40</h4>
-                    <p>Вечерята ще бъде сервирана веднага след снимките. Моля посочете предпочитанията си към менюто и алергии във формата по-надолу.</p>
+                    <h5> ВЕЧЕРЯ </h5>
+                    <h4 class="cd-date for-small">19:20</h4>
+                    <p style="font-size: 14px;">Моля да посочете предпочитанията си към менюто и алергии (ако имате такива) във формата по-долу.</p>
                 </div>
                 <!-- cd-timeline-content -->
             </div>
@@ -93,13 +127,14 @@ sitemap:
 
             <div class="cd-timeline-block animated">
                 <div class="cd-timeline-img">
-                    <img src="images/wedicons/music.svg" alt="Music icon">
+                    <img src="images/wedicons/musical-note.png" alt="Music icon">
                 </div>
                 <!-- cd-timeline-img -->
 
                 <div class="cd-timeline-content">
-                    <h3>Парти</h3>
+                    <h5>ПАРТИ</h5>
                     <h4 class="cd-date for-small">21:00</h4>
+                    <p style="font-size: 14px;">Предстои ни вечер, пълна с танци, игри и незабравими моменти!</p>
                 </div>
                 <!-- cd-timeline-content -->
             </div>
@@ -127,14 +162,15 @@ sitemap:
     <section>
         <h2 class="section__header">Информация за деня</h2>
         <p><b>Церемония</b></p>
-        <p> Ще подпишем граждански брак на място с легитимен изнесен ритуал в градината на Пасарел Лейк Клуб. Церемонията ще започне в 18:30 и ще продължи около 30 минути. Когато приключи ще се радваме да си направим снимки с вас за спомен.</p>
-        <p> Кумуват ни Максимилиана Петрова и Даниел Димитров.</p>
+        <p> Ще подпишем граждански брак на място с легитимен изнесен ритуал в градината на Пасарел Лейк Клуб. Церемонията ще започне в 16:00 и ще продължи около 30 минути. Когато приключи ще се радваме да си направим снимки с вас за спомен.</p>
+        <p> Кумуват ни Гергана Иванова и Стоян Цветков.</p>
         <p><b>Вечеря и парти</b></p>
-        <p>След снимките ще влезем във вътрешния ресторант за вечеря и танци. </p>
+        <p>След заснемането на груповите снимки, ние ще се отправим на самостоятелна фотосесия. В това време гостите ще бъдат поканени да се насочат към ресторанта, където ще могат удобно да се настанят и да се насладят на приятна атмосфера и разговори, докато очакват тържественото завръщане на младоженците.</p>
+        <p>Следват речи от кумове, вечеря и много танци.</p>
         <p><b>Цветя</b></p>
         <p>Моля не носете цветя - за тях ще се погрижим ние.</p>
         <p><b>Дрес код</b></p>
-        <p>Събитието е полуформално. Единствената ни молба е да не сте облечени изцяло в бяло или светло бежово.</p>
+        <p>Събитието е полуформално. Препоръчваме облекло в по-тъмни, есенни тонове, съобразено с цветовата тема на сватбата. Разбира се, това е само насока – изборът на облекло остава изцяло по лична преценка. Единствената ни молба е да не сте облечени изцяло в бяло или светло бежово.</p>
         <p><b>Подаръци</b></p>
         <p>Подаръците предпочитаме в плик.</p>
     </section>
@@ -158,17 +194,18 @@ sitemap:
         <p><b>Ресторантът</b></p>
         <p>Пасарел Лейк Клуб се намира на 15 километра (около 30 минути) от София до въжения мост на язовир Пасарел. Може да видите точната локацията на картата. Ресторантът разполага с 50 паркоместа.</p>
         <p><b>Транспорт</b></p>
-        <p>Ако няма да пътувате с колата или искате да се забавлявате с нас до късно, има няколко опции.</p>
-        <p><i>Yellow Taxi</i> - <a href="tel:+359 2 91119">+359 2 91119</a> Има допълнителна такса за повикване до Пасарел от 13лв. </p>
-        <p><i>Drink & Drive</i> - <a href="tel:+359 884 11 64 64">+359 884 11 64 64</a> Ресторантът работи с <a href="https://luckydrive.bg/">Lucky Drive</a>. Имат фиксиран курс от 75лв до София.</p>
-        <p><i>Автобус №3</i> - Спирката е точно пред ресторанта и последният автобус е в <a href="https://schedules.sofiatraffic.bg/autobus/3#sign/4624/1089">23:31</a></p>
+        <p>Ако няма да пътувате с кола или искате да се забавлявате с нас до късно, има няколко опции.</p>
+        <p><i>Yellow Taxi</i> - <a href="tel:+359 2 91119">+359 2 91119</a> Средна цена на такси от Пасарел до София е около 50лв (включва и повикването). </p>
+        <p><i>Drink & Drive</i> - <a href="tel:+359 884 11 64 64">+359 884 11 64 64</a> Ресторантът работи с <a href="https://luckydrive.bg/">Lucky Drive</a>. Имат фиксиран курс от 85лв до всяка точка на София.</p>
+        <p><i>Автобус №3</i> - Спирка "ЯЗ. ПАСАРЕЛ" се намира точно пред ресторанта. Последният автобус минава в 23:20. Възможни са промени в тази информация при преминаване към зимни разписания през месец септември. Моля, проверете сами разписанието през месец октомври. </p>
+        <p>Ако решите да се възползвате от някой от посочените варианти за транспорт, по ваша преценка, можете да ни предоставите банкова сметка, по която да възстановим направените от вас разходи.</p>
         <div class="google-maps">
             <div class="overlay" onClick="style.pointerEvents='none'"></div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11757.113062856515!2d23.4802257!3d42.5493839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa7f0f29c4ec75%3A0x9633c93788b82bd1!2sPasarel%20Lake%20Club!5e0!3m2!1sen!2sbg!4v1683057768565!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-    <span class="link-leader link-leader--inverse">
-        <a href="#rsvp">Как да се регистрирам?</a> &#8595;
+    <span class="link-leader link-leader--inverse" >
+        <a href="#rsvp">Как да отбележа присъствието си?</a> &#8595;
     </span>
 </div>
 
@@ -183,9 +220,9 @@ sitemap:
 <div class="wrapper" id="rsvp">
     <section>
         <h2 class="section__header">Регистрация</h2>
-        <p>Моля попълнете формата, за да знаем дали ще дойдете и какви са предпочитанията Ви. Ако имате някакви въпроси, може да се свържете с нас или с родителите ни.</p>
+        <p>Попълването на формата е <b>напълно задължително</b> и е <b>отделно за всеки присъстващ</b>. Ако имате някакви въпроси, може да се свържете с нас.</p>
         <div class="g-form-container">
-            <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSevwsxMmZPXQhXC5ZPKEp9AJL0A-nZno1uwKAboObn56sxg2Q/viewform?embedded=true" width="640" height="1116">Loading\u2026</iframe>
+            <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdoVM9eXnny_SjhmdMR-DtwzPZF8UvCn70EzvsCDFKVNTG2dg/viewform?embedded=true" width="640" height="1116">Loading\u2026</iframe>
         </div>
     </section>
 </div>
