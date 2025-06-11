@@ -7,11 +7,11 @@
 
 # Site settings
 description: > # this means to ignore newlines until "baseurl:"
-  We're getting married on 29th September 2016!
+  We're getting married on 18th October 2025!
 
 baseurl: "" # the subpath of your site, e.g. /blog
 
-url: "http://desiandmario.com" # the base hostname & protocol for your site
+url: "http://stefiandivancho.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
